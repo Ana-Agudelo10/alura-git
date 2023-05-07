@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<h2>Calulando el IMC</h2>
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br><br>")
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function calcularImc(peso,altura,nombre){
+        imc=peso/(altura*altura);
+        imprimir("El imc de "+nombre+" es: "+imc);
+    }
+
+    calcularImc(71, 1.23, "Maria")
+</script>
